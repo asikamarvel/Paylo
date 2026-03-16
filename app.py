@@ -16,15 +16,27 @@ from src.calculator_v2 import PayrollCalculator, StaffMember, PayrollBreakdown
 from src.currency import get_currency_converter
 from src.report import PayrollReport
 
-app = Flask(__name__, template_folder='templates', static_folder='static')
-app.secret_key = os.urandom(24)
+# Detect if running on Vercel (read-only filesystem)
+IS_VERCEL = os.environ.get('VERCEL', False)
 
-UPLOAD_FOLDER = Path(__file__).parent / 'uploads'
-OUTPUT_FOLDER = Path(__file__).parent / 'output'
+app = Flask(__name__, template_folder='templates', static_folder='static')
+app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24))
+
+# Use /tmp on Vercel, local folders otherwise
+if IS_VERCEL:
+    UPLOAD_FOLDER = Path('/tmp/uploads')
+    OUTPUT_FOLDER = Path('/tmp/output')
+else:
+    UPLOAD_FOLDER = Path(__file__).parent / 'uploads'
+    OUTPUT_FOLDER = Path(__file__).parent / 'output'
+
 CONFIG_DIR = Path(__file__).parent / 'config'
 
-UPLOAD_FOLDER.mkdir(exist_ok=True)
-OUTPUT_FOLDER.mkdir(exist_ok=True)
+try:
+    UPLOAD_FOLDER.mkdir(exist_ok=True)
+    OUTPUT_FOLDER.mkdir(exist_ok=True)
+except Exception:
+    pass
 
 app.config['UPLOAD_FOLDER'] = str(UPLOAD_FOLDER)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
