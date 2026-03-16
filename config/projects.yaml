@@ -1,0 +1,83 @@
+# Projects Configuration - Advanced Payroll System
+# Maps project names to their billing type and geography classification
+
+# Project Classification:
+# - billable_type: "billable" or "non_billable"
+# - geography: "local" or "regional" (determines which rate applies)
+
+projects:
+  # BILLABLE PROJECTS - Regional
+  "2023-2024 WSH Public Data Systems":
+    billable_type: "billable"
+    geography: "regional"
+    
+  "External Monitoring and Evaluation Service for The Hunger Project":
+    billable_type: "billable"
+    geography: "regional"
+    
+  "Geospatial Insights Support Team - GIST- KIMBLE 5.0":
+    billable_type: "billable"
+    geography: "regional"
+    
+  "Geospatial Partner Mapping Tool":
+    billable_type: "billable"
+    geography: "regional"
+    
+  "AI for Agriculture Learning Series":
+    billable_type: "billable"
+    geography: "regional"
+    
+  "The Umbrella Fund":
+    billable_type: "billable"
+    geography: "regional"
+
+  # BILLABLE PROJECTS - Local
+  "2024 ANNUAL MONITORING & EVALUATION EXERCISE":
+    billable_type: "billable"
+    geography: "local"
+    
+  "Nigeria Livestock Productivity and Resilience Support (L-PRES)":
+    billable_type: "billable"
+    geography: "local"
+    
+  "PV Advisors Project":
+    billable_type: "billable"
+    geography: "local"
+
+  # NON-BILLABLE PROJECTS (Internal)
+  "[BD - 2026] Business Development COP":
+    billable_type: "non_billable"
+    geography: "local"
+    
+  "[Comms - 2026] CoP - Communication and Events":
+    billable_type: "non_billable"
+    geography: "local"
+    
+  "CoP - Communication and Events":
+    billable_type: "non_billable"
+    geography: "local"
+    
+  "Advanced Internal Admin 2026":
+    billable_type: "non_billable"
+    geography: "local"
+
+  "Dev-Afrique Internal Admin 2026":
+    billable_type: "non_billable"
+    geography: "local"
+
+  "Policy Vault Project":
+    billable_type: "non_billable"
+    geography: "local"
+    
+  "Principal Executive- Internal":
+    billable_type: "non_billable"
+    geography: "local"
+    
+  "Principal Executive- Internal Naira":
+    billable_type: "non_billable"
+    geography: "local"
+
+# Default classification for unknown projects
+default:
+  billable_type: "non_billable"
+  geography: "local"

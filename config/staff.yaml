@@ -1,0 +1,77 @@
+staff:
+  # Local contractors (NGN)
+  - name: "Staff 23"
+    cadre: "principal"
+    contractor_type: "local"
+    contract_structure: "fixed_base"
+    hmo_deduction: 160500
+    
+  - name: "Staff 17"
+    cadre: "director"
+    contractor_type: "local"
+    contract_structure: "fixed_base"
+    hmo_deduction: 0
+    
+  - name: "Staff 5"
+    cadre: "senior_consultant"
+    contractor_type: "local"
+    contract_structure: "fixed_base"
+    hmo_deduction: 0
+    
+  - name: "Staff 20"
+    cadre: "associate_consultant"
+    contractor_type: "local"
+    contract_structure: "fixed_base"
+    hmo_deduction: 66666.67
+    
+  - name: "Staff 1"
+    cadre: "associate"
+    contractor_type: "local"
+    contract_structure: "fixed_base"
+    hmo_deduction: 32100
+
+  # Regional contractors (USD)
+  - name: "Staff 7"
+    cadre: "principal"
+    contractor_type: "regional"
+    contract_structure: "fixed_base"
+    hmo_deduction: 0
+    
+  - name: "Staff 16"
+    cadre: "director"
+    contractor_type: "regional"
+    contract_structure: "fixed_base"
+    hmo_deduction: 0
+    
+  - name: "Staff 14"
+    cadre: "senior_consultant"
+    contractor_type: "regional"
+    contract_structure: "fixed_base"
+    hmo_deduction: 0
+    
+  - name: "Staff 9"
+    cadre: "associate_consultant"
+    contractor_type: "regional"
+    contract_structure: "fixed_base"
+    hmo_deduction: 0
+
+  # Flexible contracts (pay per hour)
+  - name: "Staff 2"
+    cadre: "consultant"
+    contractor_type: "regional"
+    contract_structure: "flexible"
+    hmo_deduction: 0
+    
+  - name: "Staff 11"
+    cadre: "advisor"
+    contractor_type: "regional"
+    contract_structure: "flexible"
+    hmo_deduction: 0
+
+  # Fixed contracts
+  - name: "Staff 4"
+    cadre: "associate_consultant"
+    contractor_type: "regional"
+    contract_structure: "fixed"
+    fixed_amount: 625
+    hmo_deduction: 0

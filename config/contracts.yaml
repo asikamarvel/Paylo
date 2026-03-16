@@ -1,0 +1,61 @@
+contractor_types:
+  local:
+    display_name: "Local Contractor"
+    currency: "NGN"
+    withholding_tax_rate: 0.05
+
+  regional:
+    display_name: "Regional Contractor"
+    currency: "USD"
+    withholding_tax_rate: 0.10
+
+contract_structures:
+  fixed_base:
+    display_name: "Fixed-Base Contract"
+    description: "Base salary + extra billable fees"
+    has_base_payment: true
+
+  flexible:
+    display_name: "Flexible Contract"
+    description: "Pay per billable hour only"
+    has_base_payment: false
+
+  fixed:
+    display_name: "Fixed Contract"
+    description: "Fixed monthly amount"
+    has_base_payment: true
+
+  fixed_pay:
+    display_name: "Fixed Pay"
+    description: "Fixed payment regardless of hours (for Contractors/Advisors)"
+    has_base_payment: true
+
+  part_time:
+    display_name: "Part-Time"
+    description: "Hourly rate for part-time work"
+    has_base_payment: false
+
+# Employee types define categories of workers
+employee_types:
+  advisor:
+    display_name: "Advisor"
+    description: "External advisors providing specialized expertise"
+    allowed_contract_structures:
+      - fixed_pay
+    default_contract_structure: fixed_pay
+
+  contractor:
+    display_name: "Contractor"
+    description: "General contractors for project work"
+    allowed_contract_structures:
+      - fixed_pay
+      - part_time
+    default_contract_structure: fixed_pay
+
+  consultant:
+    display_name: "Consultant"
+    description: "Staff consultants with fixed base"
+    allowed_contract_structures:
+      - fixed_base
+      - flexible
+    default_contract_structure: fixed_base

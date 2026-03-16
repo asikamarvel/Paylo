@@ -1,0 +1,17 @@
+withholding_tax:
+  local:
+    rate: 0.05
+  regional:
+    rate: 0.10
+
+other_deductions:
+  hmo:
+    enabled: true
+  pension:
+    enabled: false
+    rate: 0.08
+
+currency:
+  base_currency: "NGN"
+  conversion_target: "USD"
+  fallback_rate: 1430.00

@@ -1,0 +1,88 @@
+cadres:
+  principal:
+    display_name: "Principal"
+    base_payment_ngn: 3000000
+    base_payment_usd: 3000
+    local_hourly_rate: 50000
+    regional_hourly_rate: 60000
+    regional_hourly_rate_usd: 60
+    base_billable_hours: 20
+    base_non_billable_hours: 60
+    total_base_hours: 80
+
+  director:
+    display_name: "Director/PM"
+    base_payment_ngn: 2000000
+    base_payment_usd: 1000
+    local_hourly_rate: 40000
+    regional_hourly_rate: 50000
+    regional_hourly_rate_usd: 50
+    base_billable_hours: 20
+    base_non_billable_hours: 60
+    total_base_hours: 80
+
+  senior_consultant:
+    display_name: "Senior Consultant"
+    base_payment_ngn: 1000000
+    base_payment_usd: 850
+    local_hourly_rate: 30000
+    regional_hourly_rate: 40000
+    regional_hourly_rate_usd: 40
+    base_billable_hours: 50
+    base_non_billable_hours: 30
+    total_base_hours: 80
+
+  consultant:
+    display_name: "Consultant"
+    base_payment_ngn: 600000
+    base_payment_usd: 600
+    local_hourly_rate: 20000
+    regional_hourly_rate: 30000
+    regional_hourly_rate_usd: 30
+    base_billable_hours: 60
+    base_non_billable_hours: 20
+    total_base_hours: 80
+
+  associate_consultant:
+    display_name: "Associate Consultant"
+    base_payment_ngn: 700000
+    base_payment_usd: 700
+    local_hourly_rate: 10000
+    regional_hourly_rate: 20000
+    regional_hourly_rate_usd: 20
+    base_billable_hours: 60
+    base_non_billable_hours: 20
+    total_base_hours: 80
+
+  analyst:
+    display_name: "Analyst"
+    base_payment_ngn: 500000
+    base_payment_usd: 500
+    local_hourly_rate: 5000
+    regional_hourly_rate: 10000
+    regional_hourly_rate_usd: 10
+    base_billable_hours: 60
+    base_non_billable_hours: 20
+    total_base_hours: 80
+
+  associate:
+    display_name: "Associate"
+    base_payment_ngn: 400000
+    base_payment_usd: 400
+    local_hourly_rate: 2500
+    regional_hourly_rate: 10000
+    regional_hourly_rate_usd: 10
+    base_billable_hours: 60
+    base_non_billable_hours: 20
+    total_base_hours: 80
+
+  advisor:
+    display_name: "Advisor"
+    base_payment_ngn: 0
+    base_payment_usd: 0
+    local_hourly_rate: 25000
+    regional_hourly_rate: 48263
+    regional_hourly_rate_usd: 33.75
+    base_billable_hours: 0
+    base_non_billable_hours: 0
+    total_base_hours: 0
